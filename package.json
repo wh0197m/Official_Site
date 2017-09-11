@@ -1,0 +1,25 @@
+{
+    "name": "lxtech_website",
+    "version": "1.0.0",
+    "description": "The Official site of lxtech",
+    "main": "app.js",
+    "scripts": {
+        "build": "gulp"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://192.168.0.100/penkmonkey/Offcial_Site.git"
+    },
+    "keywords": [
+        "pug",
+        "gulp"
+    ],
+    "author": "wh01am <wh0197m@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^3.9.1"
+    },
+    "dependencies": {
+        "gulp-pug": "^3.3.0"
+    }
+}
