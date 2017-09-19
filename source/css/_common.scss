@@ -1,0 +1,6 @@
+@mixin setBackground($start_color, $end_color) {
+    background: $start_color;
+    background: -moz-radial-gradient(circle, $start_color, $end_color);
+    background: -ms-radial-gradient(circle, $start_color, $end_color);
+    background: -webkit-gradient(radial, center center, 0, center center, 500, from($start_color), to($end_color));
+}

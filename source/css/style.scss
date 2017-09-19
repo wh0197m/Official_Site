@@ -4,6 +4,7 @@
 @import 'color';
 @import 'font';
 @import 'override';
+@import 'common';
 
 /**
  * Add the correct display in IE 10-.
@@ -60,50 +61,50 @@ body .wrap {
 }
 
 body {
-    font: 400 15px/1.618em Asap, Arial, Sans-Serif;
+    font: 400 15px/1.618em LightLx, Asap, Arial, Sans-Serif;
     color: #626c84;
 }
 
 h1 {
     margin: 120px 0 0;
-    font: 800 76px/1em Gilroy;
+    font: 800 76px/1em BoldLx, Gilroy;
     letter-spacing: 1px;
     color: #252a37;
 }
 
 .sub-h1 {
-    font: 400 20px/1.618em Asap;
+    font: 400 20px/1.618em LightLx, Asap;
 }
 
 h2 {
     margin: 0;
-    font: 800 44px/1.618em Gilroy;
+    font: 800 44px/1.618em BoldLx, Gilroy;
     color: #252a37;
     text-align: center;
 }
 
 .sub-h2 {
     margin: 15px auto 60px auto;
-    font: 400 18px/1.618em Asap;
+    font: 400 18px/1.618em LightLx, Asap;
     color: #626c84;
     text-align: center;
 }
 
 h3 {
-    font: 700 25px/1.618em Gilroy;
+    font: 700 25px/1.618em BoldLx, Gilroy;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #252a37;
 }
 
 h4 {
-    font: 700 30px/1.618em Gilroy;
+    font: 700 30px/1.618em BoldLx, Gilroy;
     color: #252a37;
 }
 
 h6 {
     margin: 20px auto;
-    font: 700 15px/1em Gilroy;
+    font: 700 15px/1em BoldLx, Gilroy;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
@@ -124,7 +125,7 @@ a.small {
 
 .button,
 .breadcrumbs a {
-    font: 700 15px/1em Gilroy;
+    font: 700 15px/1em BoldLx, Gilroy;
     text-align: center;
     letter-spacing: 1px;
     color: white;
@@ -238,7 +239,7 @@ form .input {
     padding: 21px 25px 21px 25px;
     height: 60px;
     width: 100%;
-    font: 400 15px/1.618em Asap, Arial, Sans-Serif;
+    font: 400 15px/1.618em LightLx, Asap, Arial, Sans-Serif;
     letter-spacing: .2px;
     background: transparent;
     background-position: -20px 22px;
@@ -371,7 +372,7 @@ body .technologies_links a {
     text-align: center;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    font: 400 14px Asap;
+    font: 400 14px LightLx, Asap;
     text-align: center;
     text-transform: none;
     color: $p_deep;
@@ -526,7 +527,7 @@ body .get_our_media_kit-side h2 {
     margin: 0;
     text-align: center;
     margin: 0 0 40px 0;
-    font: 700 30px Gilroy;
+    font: 700 30px BoldLx, Gilroy;
     color: $p_deep;
     text-align: center d;
 }
@@ -1003,7 +1004,7 @@ body .list li:before {
     padding: 0 15px;
     height: 30px;
     width: 30px;
-    font: 700 15px Gilroy;
+    font: 700 15px BoldLx, Gilroy;
     color: white;
     background: $p_light;
     -webkit-border-radius: 50%;
@@ -1265,7 +1266,7 @@ body .social_links a:hover {
 }
 
 .index p.words_text {
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
     font-size: 30px;
     font-weight: 800;
     text-align: center;
@@ -1299,7 +1300,7 @@ body .social_links a:hover {
 
 .index .top .top_left {
     position: relative;
-    background: $p_deep;
+    @include setBackground($p_deep, #130944);
     overflow: hidden;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1315,9 +1316,9 @@ body .social_links a:hover {
     flex-grow: 1;
 }
 
-.index .top .coax {
+#lxtech {
     position: absolute;
-    background: $p_deep;
+    @include setBackground($p_deep, #130944);
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -1325,18 +1326,17 @@ body .social_links a:hover {
     left: 0;
 }
 
-.index .top .coax .img {
-    position: absolute;
-    width: -webkit-calc(100% + 100px);
-    width: calc(100% + 100px);
-    height: -webkit-calc(100% + 100px);
-    height: calc(100% + 100px);
-    background-size: cover;
-    background-position: center;
-    left: -50px;
-    top: -50px;
-}
-
+// .index .top .lxtech .img {
+//     position: absolute;
+//     width: -webkit-calc(100% + 100px);
+//     width: calc(100% + 100px);
+//     height: -webkit-calc(100% + 100px);
+//     height: calc(100% + 100px);
+//     background-size: cover;
+//     background-position: center;
+//     left: -50px;
+//     top: -50px;
+// }
 .index .top .top_info {
     margin: 100px 13% 0 13%;
     width: 570px;
@@ -1498,7 +1498,7 @@ body .social_links a:hover {
 .index .success_stories .content-r h4 span.number {
     margin: -5px 30px 0 0;
     width: 50px;
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
     font-size: 44px;
     font-weight: 800;
     line-height: 1.618em;
@@ -1606,7 +1606,7 @@ body .social_links a:hover {
 
 .index .success_stories .top_rated_agency .job_statistic li span {
     color: #252a37;
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
     font-weight: 700;
 }
 
@@ -1670,11 +1670,11 @@ body .social_links a:hover {
 }
 
 .index .words_from_clients .headline p.text_color-cyan {
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
 }
 
 .index .words_from_clients .words_text {
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
     font-size: 30px;
     font-weight: 800;
     text-align: center;
@@ -1749,7 +1749,7 @@ body .social_links a:hover {
 }
 
 .technologies {
-    font: 400 18px/1.618em Asap;
+    font: 400 18px/1.618em LightLx, Asap;
     color: #626c84;
 }
 
@@ -1760,14 +1760,14 @@ body .social_links a:hover {
 
 .technologies h2 {
     margin: 0 0 40px 0;
-    font: 700 30px Gilroy;
+    font: 700 30px BoldLx, Gilroy;
     color: $p_deep;
     text-align: left;
 }
 
 .technologies h3 {
     margin-bottom: 30px;
-    font: 700 20px/1.618em Gilroy;
+    font: 700 20px/1.618em BoldLx, Gilroy;
     letter-spacing: normal;
     text-transform: none;
     color: $p_deep;
@@ -1846,17 +1846,17 @@ body .social_links a:hover {
 }
 
 .technologies_basic {
-    font: 400 18px/1.618em Asap;
+    font: 400 18px/1.618em LightLx, Asap;
     color: #626c84;
 }
 
 .technologies_basic h1 {
-    font: 800 44px/1.618em Gilroy;
+    font: 800 44px/1.618em BoldLx, Gilroy;
 }
 
 .technologies_basic h3 {
     margin-bottom: 30px;
-    font: 700 20px/1.618em Gilroy;
+    font: 700 20px/1.618em BoldLx, Gilroy;
     letter-spacing: normal;
     text-transform: none;
     color: $p_deep;
@@ -2042,7 +2042,7 @@ body .social_links a:hover {
 .contact_us h3 {
     margin-top: 0;
     margin-bottom: 20px;
-    font: 700 20px/1.618em Gilroy;
+    font: 700 20px/1.618em BoldLx, Gilroy;
     letter-spacing: normal;
     text-transform: none;
     color: #626c84;
@@ -2183,7 +2183,7 @@ body .social_links a:hover {
 
 .get_estimation h1 {
     margin: 0;
-    font: 800 44px/1.618em Gilroy;
+    font: 800 44px/1.618em BoldLx, Gilroy;
     color: #252a37;
     text-align: center;
 }
@@ -2196,7 +2196,7 @@ body .social_links a:hover {
 .get_estimation h3 {
     margin: 0 0 40px 0;
     width: 100%;
-    font: 700 30px Gilroy;
+    font: 700 30px BoldLx, Gilroy;
     color: $primary;
     text-transform: none;
     text-align: center;
@@ -2204,7 +2204,7 @@ body .social_links a:hover {
 
 .get_estimation h4 {
     margin-bottom: 0;
-    font: 700 15px/1.618em Gilroy;
+    font: 700 15px/1.618em BoldLx, Gilroy;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -2638,7 +2638,7 @@ body .social_links a:hover {
 
 .show-case .show-case_description h1 {
     margin: 0 0 40px;
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
     font-size: 44px;
     font-weight: 700;
     color: #303647;
@@ -2646,7 +2646,7 @@ body .social_links a:hover {
 
 .show-case .show-case_description .show-case_description-p {
     margin: 0;
-    font-family: Asap;
+    font-family: LightLx, Asap;
     font-size: 18px;
     line-height: 26px;
     color: #626C84;
@@ -2902,7 +2902,7 @@ body .social_links a:hover {
     margin: 0 0 25px;
     color: #262C3A;
     font-size: 30px;
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
     font-weight: 700;
     line-height: 33px;
     outline: none !important;
@@ -3065,7 +3065,7 @@ body .social_links a:hover {
     left: 50%;
     color: #fff;
     font-size: 12px;
-    font: 700 12px Gilroy;
+    font: 700 12px BoldLx, Gilroy;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -3074,7 +3074,7 @@ body .social_links a:hover {
 .blog_post-like button+span {
     color: #2DC6FE;
     text-transform: uppercase;
-    font: 700 15px Gilroy;
+    font: 700 15px BoldLx, Gilroy;
     letter-spacing: 1px;
     -webkit-transition: .2s transition ease;
     transition: .2s transition ease;
@@ -3152,368 +3152,120 @@ body .social_links a:hover {
     }
 }
 
-#COAX_Software * {
+body header #fri-left-bottom,
+body header #fri-right-bottom,
+body header #sec-right-bottom,
+body header #sec-left-bottom {
+    fill: #130944;
+}
+
+body header.header_lighten .logo_start #fri-left-bottom,
+body header.header_lighten .logo_start #fri-right-bottom,
+body header.header_lighten .logo_start #sec-left-bottom,
+body header.header_lighten .logo_start #sec-right-bottom {
+    fill: $primary;
+}
+
+@keyframes offset {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes offset {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#LxTech_Software * {
     -webkit-transition: none !important;
     transition: none !important;
 }
 
-#A,
-#X {
-    fill: none;
-    stroke: #2D59C3;
-    stroke-width: 12;
-    stroke-linecap: round;
-    stroke-dashoffset: -410;
+.logo_start g #fri-right-bottom {
+    animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+    -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
 }
 
-#A {
-    stroke-dasharray: 90, 93;
-    stroke-dashoffset: 91;
+.logo_start g #sec-right-bottom {
+    animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+    -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
 }
 
-#X {
-    stroke-dasharray: 50, 53;
-    stroke-dashoffset: 51;
+.logo_start g #fri-left-bottom {
+    animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+    -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
 }
 
-#CO_light {
-    fill: none;
-    stroke: #41B6EF;
-    stroke-width: 12;
-    stroke-linecap: round;
-    stroke-dasharray: 0, 210;
-    stroke-dashoffset: 100;
-    opacity: 0;
+.logo_start g #sec-left-bottom {
+    animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+    -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
 }
 
-#CO_dark {
-    fill: none;
-    stroke: #2D59C3;
-    stroke-width: 12;
-    stroke-linecap: round;
-    stroke-dasharray: 5, 210;
-    stroke-dashoffset: 100;
-    opacity: 0;
+#fri-right-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-body:not(.index) header #A,
-body:not(.index) header #X,
-body.index header.header_lighten #A,
-body.index header.header_lighten #X,
-body.index header:hover #A,
-body.index header:hover #X {
-    stroke: #2D59C3;
+#sec-right-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-body:not(.index) header #CO_light,
-body.index header.header_lighten #CO_light,
-body.index header:hover #CO_light {
-    stroke: #41B6EF;
+#fri-left-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-body:not(.index) header #CO_dark,
-body.index header.header_lighten #CO_dark,
-body.index header:hover #CO_dark {
-    stroke: #2D59C3;
+#sec-left-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-@-webkit-keyframes infinCO {
-    0% {
-        opacity: 1;
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 96;
-    }
-    80% {
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-    }
-    100% {
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-    }
+.logo_hover #fri-right-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-@keyframes infinCO {
-    0% {
-        opacity: 1;
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 96;
-    }
-    80% {
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-    }
-    100% {
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-    }
+.logo_hover #sec-right-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-@-webkit-keyframes infinCO_D {
-    0% {
-        opacity: 0;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    5% {
-        opacity: 1;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-    }
-    40% {
-        stroke-dasharray: 108.5, 118;
-        stroke-dashoffset: 214;
-    }
-    80% {
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-    }
-    100% {
-        opacity: 1;
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
+.logo_hover #fri-left-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-@keyframes infinCO_D {
-    0% {
-        opacity: 0;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    5% {
-        opacity: 1;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-    }
-    40% {
-        stroke-dasharray: 108.5, 118;
-        stroke-dashoffset: 214;
-    }
-    80% {
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-    }
-    100% {
-        opacity: 1;
-        stroke-dasharray: 210, 25;
-        stroke-dashoffset: 331;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
+.logo_hover #sec-left-bottom {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
 }
 
-@-webkit-keyframes infinCO_L {
-    0% {
-        opacity: 0;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    7% {
-        opacity: 1;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-    }
-    40% {
-        stroke-dasharray: 120, 105;
-        stroke-dashoffset: 228;
-    }
-    80% {
-        stroke-dasharray: 235, 0;
-        stroke-dashoffset: 356;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    100% {
-        opacity: 1;
-        stroke-dasharray: 235, 0;
-        stroke-dashoffset: 356;
-    }
+.logo_hover:hover {
+    animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+    -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
 }
 
-@keyframes infinCO_L {
-    0% {
-        opacity: 0;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    7% {
-        opacity: 1;
-        stroke-dasharray: 5, 210;
-        stroke-dashoffset: 100;
-    }
-    40% {
-        stroke-dasharray: 120, 105;
-        stroke-dashoffset: 228;
-    }
-    80% {
-        stroke-dasharray: 235, 0;
-        stroke-dashoffset: 356;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    100% {
-        opacity: 1;
-        stroke-dasharray: 235, 0;
-        stroke-dashoffset: 356;
-    }
-}
-
-@-webkit-keyframes infinA {
-    0% {
-        stroke-dasharray: 90, 93;
-        stroke-dashoffset: 91;
-    }
-    20% {
-        stroke-dasharray: 90, 93;
-        stroke-dashoffset: 50;
-    }
-    100% {
-        stroke-dasharray: 90, 93;
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes infinA {
-    0% {
-        stroke-dasharray: 90, 93;
-        stroke-dashoffset: 91;
-    }
-    20% {
-        stroke-dasharray: 90, 93;
-        stroke-dashoffset: 50;
-    }
-    100% {
-        stroke-dasharray: 90, 93;
-        stroke-dashoffset: 0;
-    }
-}
-
-@-webkit-keyframes infinX {
-    0% {
-        stroke-dasharray: 50, 53;
-        stroke-dashoffset: 51;
-    }
-    100% {
-        stroke-dasharray: 50, 53;
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes infinX {
-    0% {
-        stroke-dasharray: 50, 53;
-        stroke-dashoffset: 51;
-    }
-    100% {
-        stroke-dasharray: 50, 53;
-        stroke-dashoffset: 0;
-    }
-}
-
-@-webkit-keyframes transt {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
-        -webkit-transform-origin: center;
-        transform-origin: center;
-    }
-    80% {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
-    }
-}
-
-@keyframes transt {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
-        -webkit-transform-origin: center;
-        transform-origin: center;
-    }
-    80% {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
-    }
-}
-
-.logo_start #CO_light {
-    -webkit-animation: infinCO_L 1.2s linear forwards;
-    animation: infinCO_L 1.2s linear forwards;
-}
-
-.logo_start #CO_dark {
-    -webkit-animation: infinCO_D 1.6s linear forwards;
-    animation: infinCO_D 1.6s linear forwards;
-}
-
-.logo_start #A {
-    -webkit-animation: infinA 1.8s ease-out forwards;
-    animation: infinA 1.8s ease-out forwards;
-}
-
-.logo_start #X {
-    -webkit-animation: infinX 1.6s ease-out forwards;
-    animation: infinX 1.6s ease-out forwards;
-}
-
-.logo_hover #CO_dark {
-    opacity: 1;
-    stroke-dasharray: 210, 25;
-    stroke-dashoffset: 331;
-}
-
-.logo_hover #CO_light {
-    opacity: 1;
-    stroke-dasharray: 235, 0;
-    stroke-dashoffset: 356;
-}
-
-.logo_hover #A {
-    stroke-dasharray: 90, 93;
-    stroke-dashoffset: 0;
-}
-
-.logo_hover #X {
-    stroke-dasharray: 50, 53;
-    stroke-dashoffset: 0;
-}
-
-.logo_hover:hover #CO_dark {
-    -webkit-animation: infinCO 1s ease-in-out forwards;
-    animation: infinCO 1s ease-in-out forwards;
-}
-
-.logo_hover:hover #A {
-    -webkit-animation: transt .4s ease-in-out forwards;
-    animation: transt .4s ease-in-out forwards;
-}
-
-.logo_hover:hover #X {
-    -webkit-animation: transt .4s ease-in-out forwards 0.05s;
-    animation: transt .4s ease-in-out forwards 0.05s;
-}
-
+// .logo_hover #fri-right-bottom:hover {
+//     animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+//     -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+// }
+// .logo_hover #sec-right-bottom:hover {
+//     animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+//     -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+// }
+// .logo_hover #fri-left-bottom:hover {
+//     animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+//     -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+// }
+// .logo_hover #sec-left-bottom:hover {
+//     animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+//     -webkit-animation: offset 1.8s cubic-bezier(0, 0, 0.07, 0.9) forwards;
+// }
 nav {
-    font: 700 15px/1em Gilroy;
+    font: 700 15px/1em BoldLx, Gilroy;
     text-align: right;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -3521,7 +3273,7 @@ nav {
 }
 
 nav .drop_down-menu .menu_l2 {
-    font: 400 14px/1em Asap;
+    font: 400 14px/1em LightLx, Asap;
     text-align: center;
     text-transform: none;
     color: $p_deep;
@@ -3594,8 +3346,8 @@ body header.header_lighten .logo_wrap a {
 body header .logo_wrap a svg,
 body:not(.get_estimation) header:hover .logo_wrap a svg,
 body header.header_lighten .logo_wrap a svg {
-    width: 120px;
-    height: 30px;
+    width: 241px;
+    height: 51px;
 }
 
 body header nav,
@@ -3843,7 +3595,7 @@ body header.header_lighten li.drop_down>a:after {
     transform: translateY(-100%);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid $p_light;
+    border-top: 5px solid $primary;
 }
 
 body header li.drop_down:hover,
@@ -4081,7 +3833,7 @@ footer.container-fluid {
 }
 
 footer.container-fluid h5 {
-    font-family: Gilroy;
+    font-family: BoldLx, Gilroy;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.618em;
@@ -4520,10 +4272,10 @@ footer.container-fluid .copiright {
     .index .top .top_left {
         padding: 120px;
     }
-    .index .top .coax .img {
-        width: 100%;
-        height: 100%;
-    }
+    // .index .top .lxtech .img {
+    //     width: 100%;
+    //     height: 100%;
+    // }
     .index .top .top_info {
         margin: auto;
     }

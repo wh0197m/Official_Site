@@ -45,13 +45,13 @@ gulp.task('fonts', () => {
 
 /* 压缩图片 */
 gulp.task('imagemin', () => {
-    return gulp.src('source/imgs/**/*')
+    return gulp.src('source/images/**/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dist/imgs/'));
+        .pipe(gulp.dest('dist/images/'));
 });
 
 /* 压缩合并js逻辑 */

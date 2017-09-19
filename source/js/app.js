@@ -1,86 +1,165 @@
-// function getTransform(obj) {
-//     var matrix = obj.css("-webkit-transform") ||
-//         obj.css("-moz-transform") ||
-//         obj.css("-ms-transform") ||
-//         obj.css("-o-transform") ||
-//         obj.css("transform"),
-//         angle,
-//         x,
-//         y;
-
-//     if (matrix !== 'none') {
-//         var values = matrix.split('(')[1].split(')')[0].split(',');
-//         var a = values[0];
-//         var b = values[1];
-
-//         angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
-
-//         x = parseFloat(values[4]);
-//         y = parseFloat(values[5]);
-
-//     } else {
-//         angle = 0;
-//         x = 0;
-//         y = 0;
-//     }
-
-//     return {
-//         angle: angle,
-//         x: x,
-//         y: y
-//     };
-// }
+// 首页粒子效果
+particlesJS("lxtech", {
+    "particles": {
+        "number": {
+            "value": 80,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 140,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
 
 //动画背景
-function translate(param) {
-    var $wrap = $(param.objectsParrent),
-        wrapW = $wrap.innerWidth(),
-        wrapH = $wrap.innerHeight(),
-        CenterX = wrapW / 2,
-        CenterY = wrapH / 2;
+// function translate(param) {
+//     var $wrap = $(param.objectsParrent),
+//         wrapW = $wrap.innerWidth(),
+//         wrapH = $wrap.innerHeight(),
+//         CenterX = wrapW / 2,
+//         CenterY = wrapH / 2;
 
-    $(window).resize(function() {
-        param.objects.forEach(function(el) {
-            $(el.selector).each(function() {
-                $(this).css({
-                    'transform': 'none',
-                    'transition': 'none'
-                });
-            });
-        });
-    });
+//     $(window).resize(function() {
+//         param.objects.forEach(function(el) {
+//             $(el.selector).each(function() {
+//                 $(this).css({
+//                     'transform': 'none',
+//                     'transition': 'none'
+//                 });
+//             });
+//         });
+//     });
 
-    function init(x, y) {
-        param.objects.forEach(function(el) {
-            $(el.selector).each(function() {
-                if (window.matchMedia('(min-width: ' + param.mediaTo + 'px)').matches) {
-                    translateX = el.maxTranslate * x;
-                    translateY = el.maxTranslate * y;
+//     function init(x, y) {
+//         param.objects.forEach(function(el) {
+//             $(el.selector).each(function() {
+//                 if (window.matchMedia('(min-width: ' + param.mediaTo + 'px)').matches) {
+//                     translateX = el.maxTranslate * x;
+//                     translateY = el.maxTranslate * y;
 
-                    $(this).css({
-                        'transform': 'translate(' + translateX + 'px, ' + translateY + 'px)',
-                        'transition': '.1s'
-                    });
-                } else {
-                    $(this).css({
-                        'transform': 'none',
-                        'transition': 'none'
-                    });
-                }
-            });
-        });
-    }
+//                     $(this).css({
+//                         'transform': 'translate(' + translateX + 'px, ' + translateY + 'px)',
+//                         'transition': '.1s'
+//                     });
+//                 } else {
+//                     $(this).css({
+//                         'transform': 'none',
+//                         'transition': 'none'
+//                     });
+//                 }
+//             });
+//         });
+//     }
 
-    init(0, 0);
+//     init(0, 0);
 
-    $wrap.on('mousemove', function(el) {
-        var cursorX = el.clientX,
-            cursorY = el.clientY,
-            x = -(cursorX - CenterX) / CenterX,
-            y = -(cursorY - CenterY) / CenterY;
-        init(x, y);
-    });
-}
+//     $wrap.on('mousemove', function(el) {
+//         var cursorX = el.clientX,
+//             cursorY = el.clientY,
+//             x = -(cursorX - CenterX) / CenterX,
+//             y = -(cursorY - CenterY) / CenterY;
+//         init(x, y);
+//     });
+// }
 
 function fixPosition(parrentObject, object, offsetTop, offsetBottom) {
     var $object = $(object),
@@ -169,10 +248,10 @@ $(document).ready(function() {
     //页面加载时，动画呈现Logo
 
     $(window).load(function() {
-        $('#COAX_Software').addClass('logo_start');
-        $('#COAX_Software').mouseover(function() {
-            $('#COAX_Software').removeClass('logo_start').addClass('logo_hover');
-        });
+        $('#LxTech_Software').addClass('logo_start');
+        // $('#LxTech_Software').mouseover(function() {
+        //     $('#LxTech_Software').removeClass('logo_start').addClass('logo_hover');
+        // });
     });
 
     //头部导航
@@ -257,27 +336,27 @@ $(document).ready(function() {
     //Animation .index top-bg
     // translate(window, [['#oval-level_1',20],['#oval-level_2',30],['#oval-level_3',40],['#oval-level_4',50]], ['-50%','-50%'], 20);
 
-    translate({
-        mediaTo: 767,
-        objectsParrent: window,
-        objects: [{
-                selector: '#oval-level_1',
-                maxTranslate: 20
-            },
-            {
-                selector: '#oval-level_2',
-                maxTranslate: 30
-            },
-            {
-                selector: '#oval-level_3',
-                maxTranslate: 40
-            },
-            {
-                selector: '#oval-level_4',
-                maxTranslate: 50
-            }
-        ]
-    });
+    // translate({
+    //     mediaTo: 767,
+    //     objectsParrent: window,
+    //     objects: [{
+    //             selector: '#oval-level_1',
+    //             maxTranslate: 20
+    //         },
+    //         {
+    //             selector: '#oval-level_2',
+    //             maxTranslate: 30
+    //         },
+    //         {
+    //             selector: '#oval-level_3',
+    //             maxTranslate: 40
+    //         },
+    //         {
+    //             selector: '#oval-level_4',
+    //             maxTranslate: 50
+    //         }
+    //     ]
+    // });
 
     //Estimation link to back
 
