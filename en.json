@@ -1,0 +1,38 @@
+{
+    "nav": {
+        "about": "About",
+        "service": "Service",
+        "career": "Career",
+        "article": "Article"
+    },
+    "subNav": {
+        "web": "Web Development",
+        "mobile": "Mobile Development",
+        "design": "Product Design"
+    },
+    "thirdNav": {
+        "web": {
+            "electron": "Electron",
+            "backbone": "BackboneJS",
+            "angular": "Angular4",
+            "react": "React",
+            "vue": "Vue",
+            "node": "NodeJS",
+            "koa": "Koa",
+            "express": "Express",
+            "wordpress": "Wordpress",
+            "joomla": "Joomla",
+            "drupal": "Drupal"
+        },
+        "mobile": {
+            "android": "Anroid",
+            "ios": "IOS",
+            "ionic": "Ionic"
+        },
+        "design": {
+            "axure": "Axure",
+            "sketch": "Sketch"
+        }
+    },
+    "estimation": "Get Estimation"
+}

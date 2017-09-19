@@ -249,9 +249,6 @@ $(document).ready(function() {
 
     $(window).load(function() {
         $('#LxTech_Software').addClass('logo_start');
-        // $('#LxTech_Software').mouseover(function() {
-        //     $('#LxTech_Software').removeClass('logo_start').addClass('logo_hover');
-        // });
     });
 
     //头部导航

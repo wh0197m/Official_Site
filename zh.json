@@ -1,0 +1,99 @@
+{
+    "nav": {
+        "about": "关于",
+        "service": "服务",
+        "career": "招聘",
+        "article": "文章",
+        "contact": "联系"
+    },
+    "subNav": {
+        "web": "Web应用开发",
+        "mobile": "移动应用开发",
+        "design": "产品原型设计"
+    },
+    "thirdNav": {
+        "web": {
+            "electron": "Electron",
+            "backbone": "BackboneJS",
+            "angular": "Angular4",
+            "react": "React",
+            "vue": "Vue",
+            "node": "NodeJS",
+            "koa": "Koa",
+            "express": "Express",
+            "wordpress": "Wordpress",
+            "joomla": "Joomla",
+            "drupal": "Drupal"
+        },
+        "mobile": {
+            "android": "Anroid",
+            "ios": "IOS",
+            "ionic": "Ionic"
+        },
+        "design": {
+            "axure": "Axure",
+            "sketch": "Sketch"
+        }
+    },
+    "estimation": "开发评估",
+    "footer": {
+        "copyright": "©2017 - LxTech技术团队 保留一切权利",
+        "title": "我们相信改变世界的是创意而非技术",
+        "subTitle": "但，技术才能驱动创意的实现",
+        "tel": "Tel: ",
+        "telValue": "+08613317113810",
+        "email": "Email: ",
+        "emailValue": "service@langnal.com"
+    },
+    // 不同页面的参数名
+    "page": {
+        "index": {
+            // 特征
+            "title": "您创新·我实现",
+            "subTitle": "技术只是手段，重要的是您独一无二的创意",
+            "more": "了解更多",
+            "introTitle": "服务优势",
+            "introSubTitle": "在行业细分的大浪潮下，专业的事交给专业的团队去解决处理，往往能给雇主带来更少的风险，更高的效益。在软件开发领域，LxTech是值得您信赖的团队。",
+            "featureOne": "高效",
+            "featureOneDetail": "暂时没想好文案",
+            "featureTwo": "规范",
+            "featureTwoDetail": "暂时没想好文案",
+            "featureThree": "可靠",
+            "featureThreeDetail": "暂时没想好文案",
+            "featureFour": "先进",
+            "featureFourDetail": "暂时没想好文案",
+
+            // 履历
+            "caseTitle": "经验积累",
+            "caseSubTitle": "产品是检验技术的唯一指标",
+            "projectCount": "9",
+            "projectContent": "完美交付项目完美交付项目",
+            "mobileAppCount": "4",
+            "mobileAppContent": "上线应用",
+            "memberCount": "7",
+            "memberContent": "全栈开发",
+            "partnerCount": "11",
+            "partnerContent": "家跨地域在线合作伙伴",
+            "hireButton": "雇用我们",
+
+            // 客户评价
+            "customerWords": "评价反馈",
+            "customerSubTitle": "一些来自雇主声音",
+            "bossOneName": "随便",
+            "bossOneJobs": "某某公司某某老板",
+            "bossOneWords": "LxTech 做的东西都比较酷，脱离了低级趣味，有追求",
+            "bossTwoName": "随便",
+            "bossTwoJobs": "某某公司某某老板",
+            "bossTwoWords": "LxTech 做的东西都比较酷，脱离了低级趣味，有追求",
+            "bossThreeName": "随便",
+            "bossThreeJobs": "某某公司某某老板",
+            "bossThreeWords": "LxTech 做的东西都比较酷，脱离了低级趣味，有追求",
+
+            // 用户联系方式
+            "infoTitle": "获取资料",
+            "infoSubTitle": "快速了解如何展开雇用合作",
+            "emailPlaceholder": "输入您的邮箱",
+            "sendButton": "我要资料"
+        }
+    }
+}
