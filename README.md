@@ -5,3 +5,4 @@
 * pages下面的Components中的basic为其他基类页面存在，其他的**显示页面**需要继承
 * pages下面的Components作为公共组件目录存在
 * css目录下，希望被引入但又不希望被编译的scss样式，用下划线命名开始
+* 我们使用normalize.css的目的就是使其跨浏览器兼容性更好

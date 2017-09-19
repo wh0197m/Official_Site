@@ -37,6 +37,12 @@ gulp.task('clean', (cb) => {
     return del(['dist'], cb);
 });
 
+/* 移动字体库 */
+gulp.task('fonts', () => {
+    return gulp.src('source/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts/'));
+});
+
 /* 压缩图片 */
 gulp.task('imagemin', () => {
     return gulp.src('source/imgs/**/*')
@@ -63,7 +69,7 @@ gulp.task('jsmin', () => {
 gulp.task('cssmin', () => {
     return gulp.src('source/css/**/*.scss')
         .pipe(plumber({ errorHandler: commonErrorHandle }))
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(concat('style.css'))
         .pipe(autoprefixer({
@@ -108,12 +114,12 @@ gulp.task('watch', () => {
  * 默认为开发者环境
  */
 gulp.task('default', () => {
-    runSequence('clean', 'pages', 'cssmin', 'jsmin', 'imagemin', 'server', 'watch');
+    runSequence('clean', 'fonts', 'pages', 'cssmin', 'jsmin', 'imagemin', 'server', 'watch');
 });
 
 /**
  * 构建生产版本
  */
 gulp.task('build', (cb) => {
-    runSequence('clean', 'pagesmin', 'cssmin', 'jsmin', 'imagemin', cb)
+    runSequence('clean', 'fonts', 'pagesmin', 'cssmin', 'jsmin', 'imagemin', cb)
 });
