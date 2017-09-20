@@ -1,113 +1,114 @@
 extends components/basic
 block index
-    include components/header
-    .overlay
-    .wrap
-      .container-fluid.block.top
-        .top_left
-          #lxtech
-          .top_info
-            h1 #{page.index.title}
-            p.sub-h1 #{page.index.subTitle}
-            a.button.button-outline-white.button_medium(href='/about.html') #{page.index.more}
-      .container-fluid.block.software_engineering
-        h2 #{page.index.introTitle}
-        p.sub-h2 #{page.index.introSubTitle}
-        .tabs_slider
-          .tab_item(name='active')
-            img(alt='' src='images/svg/software_engineering/startup_ventures.svg')
-            h6 #{page.index.featureOne}
-          .tab_item
-            img(alt='' src='images/svg/software_engineering/e_commerce.svg')
-            h6 #{page.index.featureTwo}
-          .tab_item
-            img(alt='' src='images/svg/software_engineering/healthcare.svg')
-            h6 #{page.index.featureThree}
-          .tab_item
-            img(alt='' src='images/svg/software_engineering/heavy_industry.svg')
-            h6 #{page.index.featureFour}
-          .content-wrap
-            .indicator
-              .active
-            .content
-              .content-l
-                img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
-                img(alt='' src='images/svg/software_engineering/startup_ventures.svg')
-              .content-r
-                h3 #{page.index.featureOne}
-                p.big #{page.index.featureOneDetail}
-            .content
-              .content-l
-                img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
-                img(alt='' src='images/svg/software_engineering/e_commerce.svg')
-              .content-r
-                h3 #{page.index.featureTwo}
-                p.big #{page.index.featureDetail}
-            .content
-              .content-l
-                img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
-                img(alt='' src='images/svg/software_engineering/healthcare.svg')
-              .content-r
-                h3 #{page.index.featureThree}
-                p.big #{page.index.featureThreeDetail}
-            .content
-              .content-l
-                img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
-                img(alt='' src='images/svg/software_engineering/heavy_industry.svg')
-              .content-r
-                h3 #{page.index.featureFour}
-                p.big #{page.index.featuerFourDetail}
-      .container-fluid.block.success_stories
-        .container
-          h2 #{page.index.caseTitle}
-          p.sub-h2 #{page.index.caseSubTitle}
-          .content-r
-            h4
-              span.number #{page.index.projectCount}
-              | #{page.index.projectContent}
-            h4
-              span.number #{page.index.mobileAppCount}
-              | #{page.index.mobileAppContent}
-            h4
-              span.number #{page.index.memberCount}
-              | #{page.index.memberContent}
-            h4
-              span.number #{page.index.partnerCount}
-              | #{page.index.partnerContent}
-          .top_rated_agency
-            a.button.button_medium.button-green(href='https://www.upwork.com/agencies/~01bf1f175f500af9ac') #{page.index.hireButton}
-      .container-fluid.block.words_from_clients
-        h2 #{page.index.customerWords}
-        p.sub-h2 #{page.index.customerSubTitle}
-        .slider
-          .content-wrap
-            .content(slide='active')
-              .words_wrap-item
-                .photo_user
-                  img(alt='' src='images/user_photo-2.jpg')
-                .headline
-                  p.text_color-dark_blu.bigLucy #{page.index.bossOneName}
-                  p.text_color-cyan #{page.index.bossOneJobs}
-                p.words_text #{page.index.bossOneWords}
-            .content
-              .words_wrap-item
-                .photo_user
-                  img(alt='' src='images/user_photo.jpg')
-                .headline
-                  p.text_color-dark_blu.big #{page.index.bossTwoName}
-                  p.text_color-cyan #{page.index.bossTwoJobs}
-                p.words_text #{page.index.bossTwoWords}
-            .content
-              .words_wrap-item
-                .photo_user
-                  img(alt='' src='images/user_photo-3.jpg')
-                .headline
-                  p.text_color-dark_blu.big #{page.index.bossThreeName}
-                  p.text_color-cyan #{page.index.bossThreeJobs}
-                p.words_text #{page.index.bossThreeWords}
-          .arrow-left
-            img(alt='' src='images/svg/arrow.svg')
-          .arrow-right
-            img(alt='' src='images/svg/arrow.svg')
-      include components/info
-    include components/footer
+    body.index(style="overflow-y:auto;")
+      include components/header
+      .overlay
+      .wrap
+        .container-fluid.block.top
+          .top_left
+            #lxtech
+            .top_info
+              h1 #{page.index.title}
+              p.sub-h1 #{page.index.subTitle}
+              a.button.button-outline-white.button_medium(href='/about.html') #{page.index.more}
+        .container-fluid.block.software_engineering
+          h2 #{page.index.introTitle}
+          p.sub-h2 #{page.index.introSubTitle}
+          .tabs_slider
+            .tab_item(name='active')
+              img(alt='' src='images/svg/software_engineering/startup_ventures.svg')
+              h6 #{page.index.featureOne}
+            .tab_item
+              img(alt='' src='images/svg/software_engineering/e_commerce.svg')
+              h6 #{page.index.featureTwo}
+            .tab_item
+              img(alt='' src='images/svg/software_engineering/healthcare.svg')
+              h6 #{page.index.featureThree}
+            .tab_item
+              img(alt='' src='images/svg/software_engineering/heavy_industry.svg')
+              h6 #{page.index.featureFour}
+            .content-wrap
+              .indicator
+                .active
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='images/svg/software_engineering/startup_ventures.svg')
+                .content-r
+                  h3 #{page.index.featureOne}
+                  p.big #{page.index.featureOneDetail}
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='images/svg/software_engineering/e_commerce.svg')
+                .content-r
+                  h3 #{page.index.featureTwo}
+                  p.big #{page.index.featureDetail}
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='images/svg/software_engineering/healthcare.svg')
+                .content-r
+                  h3 #{page.index.featureThree}
+                  p.big #{page.index.featureThreeDetail}
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='images/svg/software_engineering/heavy_industry.svg')
+                .content-r
+                  h3 #{page.index.featureFour}
+                  p.big #{page.index.featuerFourDetail}
+        .container-fluid.block.success_stories
+          .container
+            h2 #{page.index.caseTitle}
+            p.sub-h2 #{page.index.caseSubTitle}
+            .content-r
+              h4
+                span.number #{page.index.projectCount}
+                | #{page.index.projectContent}
+              h4
+                span.number #{page.index.mobileAppCount}
+                | #{page.index.mobileAppContent}
+              h4
+                span.number #{page.index.memberCount}
+                | #{page.index.memberContent}
+              h4
+                span.number #{page.index.partnerCount}
+                | #{page.index.partnerContent}
+            .top_rated_agency
+              a.button.button_medium.button-green(href='https://www.upwork.com/agencies/~01bf1f175f500af9ac') #{page.index.hireButton}
+        .container-fluid.block.words_from_clients
+          h2 #{page.index.customerWords}
+          p.sub-h2 #{page.index.customerSubTitle}
+          .slider
+            .content-wrap
+              .content(slide='active')
+                .words_wrap-item
+                  .photo_user
+                    img(alt='' src='images/user_photo-2.jpg')
+                  .headline
+                    p.text_color-dark_blu.bigLucy #{page.index.bossOneName}
+                    p.text_color-cyan #{page.index.bossOneJobs}
+                  p.words_text #{page.index.bossOneWords}
+              .content
+                .words_wrap-item
+                  .photo_user
+                    img(alt='' src='images/user_photo.jpg')
+                  .headline
+                    p.text_color-dark_blu.big #{page.index.bossTwoName}
+                    p.text_color-cyan #{page.index.bossTwoJobs}
+                  p.words_text #{page.index.bossTwoWords}
+              .content
+                .words_wrap-item
+                  .photo_user
+                    img(alt='' src='images/user_photo-3.jpg')
+                  .headline
+                    p.text_color-dark_blu.big #{page.index.bossThreeName}
+                    p.text_color-cyan #{page.index.bossThreeJobs}
+                  p.words_text #{page.index.bossThreeWords}
+            .arrow-left
+              img(alt='' src='images/svg/arrow.svg')
+            .arrow-right
+              img(alt='' src='images/svg/arrow.svg')
+        include components/info
+      include components/footer

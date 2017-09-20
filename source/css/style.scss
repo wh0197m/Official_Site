@@ -3965,16 +3965,6 @@ footer.container-fluid .copiright {
     .about .approach .approach_stage:last-child .headline:after {
         content: none;
     }
-    body.index header:not(.header_lighten):not(:hover) #A,
-    body.index header:not(.header_lighten):not(:hover) #X {
-        stroke: white;
-    }
-    body.index header:not(.header_lighten):not(:hover) #CO_light {
-        stroke: #41B6EF;
-    }
-    body.index header:not(.header_lighten):not(:hover) #CO_dark {
-        stroke: white;
-    }
     body.index header:not(.header_lighten):not(:hover) .header_wrap {
         background: transparent;
         -webkit-box-shadow: none;

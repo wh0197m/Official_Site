@@ -1,4 +1,7 @@
 extends components/basic
 block about
-    include components/header
-    include components/footer
+    body.about(style="overflow-y:auto;")
+      include components/header
+      .overlay
+      .wrap
+      include components/footer

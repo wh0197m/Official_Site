@@ -1,7 +1,8 @@
 extends components/basic
 block career
-    include components/header
-    .overlay
-    .wrap
-      include components/info
-    include components/footer
+    body.career(style="overflow-y:auto;")
+      include components/header
+      .overlay
+      .wrap
+        include components/info
+      include components/footer
