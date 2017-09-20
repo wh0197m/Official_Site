@@ -109,22 +109,5 @@ block index
             img(alt='' src='images/svg/arrow.svg')
           .arrow-right
             img(alt='' src='images/svg/arrow.svg')
-      .container-fluid.block.get_our_media_kit-center
-        h2 #{page.index.infoTitle}
-        p.sub-h2 #{page.index.subTitle}
-        form#media-kit-form
-          input.input.input_rounded(placeholder=page.index.emailPlaceholder required='' type='email')
-          input.button.button-blue.button_big(onclick='_ga(&#39;send&#39;, &#39;Infopack&#39;, &#39;Get_infopack&#39;)' type='submit' value=page.index.sendButton)
-          svg.media_kit-bg(height='225' id='media_kit-bg' viewbox='0 0 1305 225' width='1305' xmlns='http://www.w3.org/2000/svg')
-            g(fill-rule='evenodd' fill='none')
-              polygon(fill='#8559da' id='obj_1' points='664.726 204 677.583 211.726 669.858 224.583 657 216.858')
-              polygon(fill='#140078' id='obj_2' points='6.889 7.171 8.707 13.954 1.924 15.772 .106 8.988')
-              polygon(fill='#512da8' id='obj_3' points='1300.726 117 1304.275 119.133 1302.142 122.682 1298.593 120.549')
-              circle(cx='264' cy='10' fill='#2f1870' id='obj_4' r='10')
-              circle(cx='987.5' cy='100.5' fill='#153587' id='obj_5' r='7.5')
-              circle(cx='1163' cy='12' fill='#0C1F51' id='obj_6' r='5')
-              circle(cx='184.5' cy='135.5' fill='#140078' id='obj_7' r='4.5')
-              circle(cx='59.5' cy='114.5' fill='#512da8' id='obj_8' r='2.5')
-              circle(cx='610' cy='166' fill='#140078' id='obj_9' r='2')
-              circle(cx='916' cy='7' fill='#512da8' id='obj_10' r='7')
+      include components/info
     include components/footer
