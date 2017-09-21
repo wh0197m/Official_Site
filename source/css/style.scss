@@ -2897,11 +2897,18 @@ body .social_links a:hover {
     }
 }
 
-body header #fri-left-bottom,
-body header #fri-right-bottom,
-body header #sec-right-bottom,
-body header #sec-left-bottom {
+body.index header #fri-left-bottom,
+body.index header #fri-right-bottom,
+body.index header #sec-right-bottom,
+body.index header #sec-left-bottom {
     fill: #130944;
+}
+
+body:not(.index) header #fri-left-bottom,
+body:not(.index) header #fri-right-bottom,
+body:not(.index) header #sec-right-bottom,
+body:not(.index) header #sec-left-bottom {
+    fill: $primary;
 }
 
 body header.header_lighten .logo_start #fri-left-bottom,
