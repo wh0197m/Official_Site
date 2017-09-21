@@ -1,166 +1,3 @@
-// 首页粒子效果
-particlesJS("lxtech", {
-    "particles": {
-        "number": {
-            "value": 80,
-            "density": {
-                "enable": true,
-                "value_area": 800
-            }
-        },
-        "color": {
-            "value": "#ffffff"
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#000000"
-            },
-            "polygon": {
-                "nb_sides": 5
-            },
-            "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
-            }
-        },
-        "opacity": {
-            "value": 0.5,
-            "random": false,
-            "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-            }
-        },
-        "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-            }
-        },
-        "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
-        },
-        "move": {
-            "enable": true,
-            "speed": 6,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-            }
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "grab"
-            },
-            "onclick": {
-                "enable": true,
-                "mode": "push"
-            },
-            "resize": true
-        },
-        "modes": {
-            "grab": {
-                "distance": 140,
-                "line_linked": {
-                    "opacity": 1
-                }
-            },
-            "bubble": {
-                "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 8,
-                "speed": 3
-            },
-            "repulse": {
-                "distance": 200,
-                "duration": 0.4
-            },
-            "push": {
-                "particles_nb": 4
-            },
-            "remove": {
-                "particles_nb": 2
-            }
-        }
-    },
-    "retina_detect": true
-});
-
-//动画背景
-// function translate(param) {
-//     var $wrap = $(param.objectsParrent),
-//         wrapW = $wrap.innerWidth(),
-//         wrapH = $wrap.innerHeight(),
-//         CenterX = wrapW / 2,
-//         CenterY = wrapH / 2;
-
-//     $(window).resize(function() {
-//         param.objects.forEach(function(el) {
-//             $(el.selector).each(function() {
-//                 $(this).css({
-//                     'transform': 'none',
-//                     'transition': 'none'
-//                 });
-//             });
-//         });
-//     });
-
-//     function init(x, y) {
-//         param.objects.forEach(function(el) {
-//             $(el.selector).each(function() {
-//                 if (window.matchMedia('(min-width: ' + param.mediaTo + 'px)').matches) {
-//                     translateX = el.maxTranslate * x;
-//                     translateY = el.maxTranslate * y;
-
-//                     $(this).css({
-//                         'transform': 'translate(' + translateX + 'px, ' + translateY + 'px)',
-//                         'transition': '.1s'
-//                     });
-//                 } else {
-//                     $(this).css({
-//                         'transform': 'none',
-//                         'transition': 'none'
-//                     });
-//                 }
-//             });
-//         });
-//     }
-
-//     init(0, 0);
-
-//     $wrap.on('mousemove', function(el) {
-//         var cursorX = el.clientX,
-//             cursorY = el.clientY,
-//             x = -(cursorX - CenterX) / CenterX,
-//             y = -(cursorY - CenterY) / CenterY;
-//         init(x, y);
-//     });
-// }
-
 function fixPosition(parrentObject, object, offsetTop, offsetBottom) {
     var $object = $(object),
         $parrentObject = $(parrentObject),
@@ -243,12 +80,136 @@ function fixPosition(parrentObject, object, offsetTop, offsetBottom) {
     });
 }
 
+function animation() {
+    // 首页粒子效果
+    particlesJS("lxtech", {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 3,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "grab"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 140,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+}
+
 $(document).ready(function() {
 
-    //页面加载时，动画呈现Logo
+    // 首页则加载粒子动画
+    if (window.location.pathname === '/') {
+        animation();
+    }
 
+    // 在console出现指定内容
+    console.log("\n __         __  __     ______   ______     ______     __  __    \n/\\ \\       /\\_\\_\\_\\   /\\__  _\\ /\\  ___\\   /\\  ___\\   /\\ \\_\\ \\   \n\\ \\ \\____  \\/_/\\_\\/_  \\/_/\\ \\/ \\ \\  __\\   \\ \\ \\____  \\ \\  __ \\  \n \\ \\_____\\   /\\_\\/\\_\\    \\ \\_\\  \\ \\_____\\  \\ \\_____\\  \\ \\_\\ \\_\\ \n  \\/_____/   \\/_/\\/_/     \\/_/   \\/_____/   \\/_____/   \\/_/\\/_/ \n                                                                \n");
+    console.log('%c源码可以直接通过邮件获取，使用编辑器看岂不是更好？\n', 'background: #8756D6; color: #fff; border-radius: 8px 8px 0 0; font-size: 12px; padding: 5px; display: inline-block;');
+    console.log('%c您对我们的技术感兴趣？ 那赶紧联系我们啊!        \n', 'background: #8756D6; color: #fff; border-radius: 0 0 8px 8px; font-size: 12px; padding: 5px; display: inline-block;');
+    console.log('%c简历投递邮箱：%chr@langnal.com', 'color: #2F146B; font-size: 12px; padding: 5px; display: inline-block;', 'color: #51AE31; font-size: 12px; padding: 5px; display: inline-block; text-decoration:underline');
+
+    //页面加载时，动画呈现Logo
     $(window).load(function() {
-        $('#LxTech_Software').addClass('logo_start');
+        $('#LxTech_Software ').addClass('logo_start ');
     });
 
     //头部导航
@@ -330,40 +291,13 @@ $(document).ready(function() {
         }
     });
 
-    //Animation .index top-bg
-    // translate(window, [['#oval-level_1',20],['#oval-level_2',30],['#oval-level_3',40],['#oval-level_4',50]], ['-50%','-50%'], 20);
-
-    // translate({
-    //     mediaTo: 767,
-    //     objectsParrent: window,
-    //     objects: [{
-    //             selector: '#oval-level_1',
-    //             maxTranslate: 20
-    //         },
-    //         {
-    //             selector: '#oval-level_2',
-    //             maxTranslate: 30
-    //         },
-    //         {
-    //             selector: '#oval-level_3',
-    //             maxTranslate: 40
-    //         },
-    //         {
-    //             selector: '#oval-level_4',
-    //             maxTranslate: 50
-    //         }
-    //     ]
-    // });
-
-    //Estimation link to back
-
     $("a[href$='get_estimation.html']").click(function() {
         localStorage.setItem('backUrl', location.href);
     });
 
     $("header a[href$='index.html']").attr('href', localStorage.getItem('backUrl'));
 
-    //Tabs Slider
+    //tab滑动
 
     $('.tabs_slider .tab_item').click(function() {
         $('.' + $(this).attr('class')).removeAttr('name');
@@ -409,7 +343,7 @@ $(document).ready(function() {
         }
     });
 
-    //Fixed Position Get Estimation
+    //固定开发评估位置
 
     if ($('body').hasClass('technology_page') === true || $('body').hasClass('technologies') === true) {
         fixPosition('.content_wrap', '.get_our_media_kit-side', 160, 80);
@@ -417,7 +351,7 @@ $(document).ready(function() {
         fixPosition('.content_wrap', '.get_our_media_kit-side', 160, 0);
     }
 
-    //Photo View
+    //照片放大预览
 
     $('body.career .photo_item').focus(function() {
         $('body.career .view').attr('style', $(this).attr('style'));
@@ -426,7 +360,8 @@ $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
     });
-    //Email
+
+    // 获取用户邮箱
     function infopack(form) {
         var $form = $(form),
             $btnSubmit = $form.find(':submit'),
@@ -550,13 +485,4 @@ $(document).ready(function() {
     }
 
     formValid();
-
-    // Blog like animation
-
-    $('.blog_post-like button').on('click', function() {
-        $(this).addClass('active');
-        setTimeout(function() {
-            $('.blog_post-like button').removeClass('active');
-        }, 1000);
-    });
 });
