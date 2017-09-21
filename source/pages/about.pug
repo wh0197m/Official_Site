@@ -2,6 +2,73 @@ extends components/basic
 block about
     body.about(style="overflow-y:auto;")
       include components/header
-      .overlay
       .wrap
+        .container-fluid.block.software_engineering
+          h2 #{page.about.princingModelTitle}
+          p.sub-h2 #{page.about.princingModelSubTitle}
+          .tabs_slider
+            .tab_item(name='active')
+              img(alt='' src='')
+              h6 #{page.about.modelOne}
+            .tab_item
+              img(alt='' src='')
+              h6 #{page.about.modelTwo}
+            .tab_item
+              img(alt='' src='')
+              h6 #{page.about.modelThree}
+            .tab_item
+              img(alt='' src='')
+              h6 #{page.about.modelFour}
+            .content-wrap
+              .indicator
+                .active
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='')
+                .content-r
+                  h3 #{page.about.modelOne}
+                  p.big #{page.about.modelOneDetail}
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='')
+                .content-r
+                  h3 #{page.about.modelTwo}
+                  p.big #{page.about.modelTwoDetail}
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='')
+                .content-r
+                  h3 #{page.about.modelThree}
+                  p.big #{page.about.modelThreeDetail}
+              .content
+                .content-l
+                  img(alt='' class='icon_bg' src='images/svg/icon_bg.svg')
+                  img(alt='' src='')
+                .content-r
+                  h3 #{page.about.modelFour}
+                  p.big #{page.about.modelFourDetail}
+        .container-fluid.block.approach
+          h2 #{page.about.approachTitle}
+          p.sub-h2 #{page.about.approachSubTitle}
+            .container
+              .row  
+                .col-md-4.approach_stage
+                  .headline
+                    img(alt='' src='/images/svg/approach/first_stage.svg')
+                    h6 #{page.about.firstStage}
+                  p.big #{page.about.firstStageDetail}
+                .col-md-4.approach_stage
+                  .headline
+                    img(alt='' src='/images/svg/approach/second_stage.svg')
+                    h6 #{page.about.secondStage}
+                  p.big #{page.about.secondStageDetail}
+                .col-md-4.approach_stage
+                  .headline
+                    img(alt='' src='/images/svg/approach/third_stage.svg')
+                    h6 #{page.about.thirdStage}
+                  p.big #{page.about.thirdStageDetail}
+        include components/info      
       include components/footer
