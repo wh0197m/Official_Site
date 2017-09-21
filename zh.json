@@ -43,7 +43,8 @@
         "tel": "Tel: ",
         "telValue": "+08613317113810",
         "email": "Email: ",
-        "emailValue": "service@langnal.com"
+        "emailValue": "service@langnal.com",
+        "address": "武汉市洪山区珞喻路中部创意大厦2308室"
     },
     // 不同页面的参数名
     "page": {
@@ -94,6 +95,36 @@
             "infoSubTitle": "快速了解如何展开雇用合作",
             "emailPlaceholder": "输入您的邮箱",
             "sendButton": "我要资料"
+        },
+        "about": {
+            // 定价模型
+            "princingModelTitle": "定价模型",
+            "princingModelSubTitle": "暂时没想好文案",
+            "modelOne": "时间&材料",
+            "modelOneDetail": "暂时没想好文案",            
+            "modelTwo": "固定价格",
+            "modelTwoDetail": "暂时没想好文案",
+            "modelThree": "里程碑计费",
+            "modelThreeDetail": "暂时没想好文案",
+            "modelFour": "专业团队",
+            "modelFourDetail": "暂时没想好文案",
+
+            // 方式
+            "approachTitle": "方式",
+            "approachSubTitle": "暂时没想好文案",
+            "firstStage": "第一步",
+            "firstStageDetail": "暂时没想好文案",
+            "secondStage": "第二步",
+            "secondStageDetail": "暂时没想好文案",
+            "thirdStage": "第三步",
+            "thirdStageDetail": "暂时没想好文案"
+        },
+        "contact": {
+            "contactTitle": "联系",
+            "contactSubTitle": "我们渴望您的建议。如果需要更多的信息，请告诉我们！",
+            "sendMsg": "联系我们",
+            "workTimeTitle": "工作时间",
+            "workTimeLength": "9:00 至 18:00"
         }
     }
 }
