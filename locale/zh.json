@@ -101,7 +101,7 @@
             "princingModelTitle": "定价模型",
             "princingModelSubTitle": "暂时没想好文案",
             "modelOne": "时间&材料",
-            "modelOneDetail": "暂时没想好文案",            
+            "modelOneDetail": "暂时没想好文案",
             "modelTwo": "固定价格",
             "modelTwoDetail": "暂时没想好文案",
             "modelThree": "里程碑计费",
@@ -125,6 +125,31 @@
             "sendMsg": "联系我们",
             "workTimeTitle": "工作时间",
             "workTimeLength": "9:00 至 18:00"
+        },
+        "career": {
+            "careerTitle": "加入我们",
+            "careerSubTitle": "与我们志同道合？欢迎加入我们！",
+            "careerHrEmail": "hr@langnal.com",
+            "benefits": "福利待遇",
+            "featureOne": "",
+            "featureOneDetail": "",
+            "featureTwo": "弹性工作",
+            "featureTwoDetail": "",
+            "featureThree": "",
+            "featureThreeDetail": "",
+            "featureFour": "",
+            "featureFourDetail": "",
+            "featureFive": "",
+            "featureFiveDetail": "",
+            "featureSix": "",
+            "featureSixDetail": "",
+            "featureSeven": "",
+            "featureSevenDetail": "",
+            "featureEight": "",
+            "featureEightDetail": "",
+            "needTitle": "招聘岗位",
+            "needOne": "基于NodeJS的全栈工程师",
+            "need"
         }
     }
 }
