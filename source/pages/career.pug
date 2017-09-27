@@ -5,113 +5,60 @@ block career
       .overlay
       .wrap
         .container-fluid.block.top
-    //- <h1>
-    //- Careers
-    //- </h1>
-    //- <p class="sub-h1">
-    //- Interested in internship or full-time position. Let us know.
-    //- </p>
-    //- <a href="mailto:hr@coaxsoft.com">
-    //- //- hr@coaxsoft.com
-    //- </a>
-    //- <div class="photos_wrap">
-    //- <div class="photo_item" id="photo_item" style="background-image: url(/images/IMG_8420.jpg)" tabindex="1"></div>
-    //- <div class="photo_item" style="background-image: url(/images/IMG_8259.jpg)" tabindex="2"></div>
-    //- <div class="photo_item" style="background-image: url(/images/IMG_8281.jpg)" tabindex="3"></div>
-    //- <div class="photo_item" style="background-image: url(/images/IMG_8384.jpg)" tabindex="4"></div>
-    //- <div class="photo_item" style="background-image: url(/images/IMG_8213.jpg)" tabindex="5"></div>
-    //- <div class="photo_item" style="background-image: url(/images/IMG_8564.jpg)" tabindex="6"></div>
-    //- <div class="view"></div>
-    //- </div>
-    //- </div>
-    //- <div class="container block benefits">
-    //- <h2>
-    //- Benefits
-    //- </h2>
-    //- <div class="benefits_wrap">
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/flexible_hours.svg">
-    //- <h6>
-    //- Flexible hours
-    //- </h6>
-    //- <p>
-    //- Adjust your plan to work efficiently.
-    //- </p>
-    //- </div>
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/parties.svg">
-    //- <h6>
-    //- Parties
-    //- </h6>
-    //- <p>
-    //- We go out regularly every quarter.
-    //- </p>
-    //- </div>
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/gaming.svg">
-    //- <h6>
-    //- //- Gaming
-    //- </h6>
-    //- <p>
-    //- //- Like playing PS4? We have a companion!
-    //- </p>
-    //- </div>
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/fruits.svg">
-    //- <h6>
-    //- //- Fruits
-    //- </h6>
-    //- <p>
-    //- //- We have apples and oranges in the fridge.
-    //- </p>
-    //- </div>
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/24_days_of_vacation.svg">
-    //- <h6>
-    //- //- 24 days of vacation
-    //- </h6>
-    //- <p>
-    //- //- You have 24 days off through the year
-    //- </p>
-    //- </div>
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/imac.svg">
-    //- <h6>
-    //- iMac
-    //- </h6>
-    //- <p>
-    //- We offer an iMac in the office.
-    //- </p>
-    //- </div>
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/language_lessons.svg">
-    //- <h6>
-    //- Language lessons
-    //- </h6>
-    //- <p>
-    //- //- Improve your skills to work qualitatively.
-    //- </p>
-    //- </div>
-    //- <div class="benefits_item">
-    //- <img alt="" src="/images/svg/benefits/leaders_support.svg">
-    //- <h6>
-    //- //- Leader’s support
-    //- </h6>
-    //- <p>
-    //- //-  We help you grow and mentor you.
-    //- </p>
-    //- </div>
-    //- </div>
-    //- </div>
-    //- <div class="container block opportunities">
-    //- <h2>Current Opportunities</h2>
-    //- <ul class="list">
-    //- <li>Middle Ruby on Rails Developer</li>
-    //- <li>Junior Ruby on Rails Developer</li>
-    //- <li>QA</li>
-    //- <li>Senior Java Developer</li>
-    //- <li>Front-end Developer (Backbone, Marionette)</li>
-    //- </ul>
-    //- </div>
+          h1 #{page.career.careerTitle}
+          p.sub-h1 #{page.career.careerSubTitle}
+          a(href=page.career.careerHrEmail)
+          .photos_wrap
+            .photo_item(style="background-image: url(http://wx3.sinaimg.cn/mw1024/006WYMcfly1fjxxdwy4srj318g0tl11u.jpg)" tabindex="1")
+            .photo_item(style="background-image: url(http://wx2.sinaimg.cn/mw1024/006WYMcfly1fjxxe7g1l0j318g0tln5g.jpg)" tabindex="2")
+            .photo_item(style="background-image: url(http://wx1.sinaimg.cn/mw1024/006WYMcfly1fjy3o149bej318g0xcwr3.jpg)" tabindex="3")
+            .photo_item(style="background-image: url(http://wx4.sinaimg.cn/mw1024/006WYMcfly1fjxxdzrl4rj318g0tlwjk.jpg)" tabindex="6")
+            .photo_item(style="background-image: url(http://wx2.sinaimg.cn/mw1024/006WYMcfly1fjxxehhkt0j318g0tljyk.jpg)" tabindex="5")
+            .photo_item(style="background-image: url(http://wx3.sinaimg.cn/mw1024/006WYMcfly1fjxxecq3u8j318g0xctgp.jpg)" tabindex="4")
+            .view
+        .container.block.benefits
+          h2 #{page.career.benefits}
+          .benefits_wrap
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/flexible_hours.svg")
+              h6 #{page.career.featureOne}
+              p #{page.career.featureOneDetail}
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/parties.svg")
+              h6 #{page.career.featureTwo}
+              p #{page.career.featureTwoDetail}
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/gaming.svg")
+              h6 #{page.career.featureThree}
+              p #{page.career.featureThreeDetail}
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/fruits.svg")
+              h6 #{page.career.featureFour}
+              p #{page.career.featureFourDetail}
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/24_days_of_vacation.svg")
+              h6 #{page.career.featureFive}
+              p #{page.career.featureFiveDetail}
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/imac.svg")
+              h6 #{page.career.featureSix}
+              p #{page.career.featureSixDetail}
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/language_lessons.svg")
+              h6 #{page.career.featureSeven}
+              p #{page.career.featureSevenDetail}
+            .benefits_item
+              img(alt="" src="/images/svg/benefits/leaders_support.svg")
+              h6 #{page.career.featureEight}
+              p #{page.career.featureEightDetail}
+
+        .container.block.opportunities
+          h2 #{page.career.needTitle}
+          ul.list
+            li #{page.career.needOne}
+            li #{page.career.needTwo}
+            li #{page.career.needThree}
+            li #{page.career.needFour}
+            li #{page.career.needFive}
         include components/info
       include components/footer

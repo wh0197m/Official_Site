@@ -13,25 +13,28 @@
     },
     "thirdNav": {
         "web": {
-            "electron": "Electron",
             "backbone": "BackboneJS",
             "angular": "Angular4",
             "react": "React",
-            "vue": "Vue",
             "node": "NodeJS",
-            "koa": "Koa",
-            "express": "Express",
             "wordpress": "Wordpress",
             "joomla": "Joomla",
-            "drupal": "Drupal"
+            "drupal": "Drupal",
+            "ai": "AI",
+            "api": "API",
+            "d3": "D3",
+            "mongo": "MongoDB",
+            "postgre": "PostgreSQL"
         },
         "mobile": {
-            "android": "Anroid",
-            "ios": "IOS",
-            "ionic": "Ionic"
+            "android": "Android",
+            "ios": "iOS",
+            "electron": "Electron"
         },
         "design": {
-            "axure": "Axure",
+            "brand": "Brand Design",
+            "interact": "Interaction Design",
+            "ui": "UI Design",
             "sketch": "Sketch"
         }
     },
@@ -131,25 +134,28 @@
             "careerSubTitle": "与我们志同道合？欢迎加入我们！",
             "careerHrEmail": "hr@langnal.com",
             "benefits": "福利待遇",
-            "featureOne": "",
-            "featureOneDetail": "",
+            "featureOne": "丰厚薪酬",
+            "featureOneDetail": "同地区同级别上浮15%~25%",
             "featureTwo": "弹性工作",
-            "featureTwoDetail": "",
-            "featureThree": "",
-            "featureThreeDetail": "",
-            "featureFour": "",
-            "featureFourDetail": "",
-            "featureFive": "",
-            "featureFiveDetail": "",
-            "featureSix": "",
-            "featureSixDetail": "",
-            "featureSeven": "",
-            "featureSevenDetail": "",
-            "featureEight": "",
-            "featureEightDetail": "",
+            "featureTwoDetail": "你听说过自觉的菜园门吗？",
+            "featureThree": "五险一金",
+            "featureThreeDetail": "基本福利保障，一个都不能少",
+            "featureFour": "灵活休假",
+            "featureFourDetail": "除法定假日，可以根据工作情况灵活调休",
+            "featureFive": "定期团建",
+            "featureFiveDetail": "去山谷里玩？哦，不！我们去参加高端站会，拓宽视野",
+            "featureSix": "舒适办公",
+            "featureSixDetail": "拒绝格子间，种满绿植的开放式环境",
+            "featureSeven": "美食午休",
+            "featureSevenDetail": "睡不好吃不好，就不要谈工作",
+            "featureEight": "自由发声",
+            "featureEightDetail": "为了更优秀的产品，请指手画脚",
             "needTitle": "招聘岗位",
             "needOne": "基于NodeJS的全栈工程师",
-            "need"
+            "needTwo": "熟练掌握Android原生/混合开发的独立开发者",
+            "needThree": "熟练掌握iOS原生/混合开发的独立开发者",
+            "needFour": "配色大胆天马行空的设计师",
+            "needFive": "爱折腾、闲不住、带薪实习的大学生"
         }
     }
 }
