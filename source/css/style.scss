@@ -1715,7 +1715,7 @@ body .social_links a:hover {
 
 .about .approach .approach_stage .headline img,
 .about .approach .approach_stage .headline h6 {
-    margin: 0 30px 0 0;
+    margin: 0 10px 0 10px;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -1729,7 +1729,16 @@ body .social_links a:hover {
     content: '';
     margin-top: -15px;
     display: block;
-    width: 100%;
+    width: 50%;
+    height: 1px;
+    border-bottom: dashed 1px #e0e5f0;
+}
+
+.about .approach .approach_stage .headline:before {
+    content: '';
+    margin-top: -15px;
+    display: block;
+    width: 50%;
     height: 1px;
     border-bottom: dashed 1px #e0e5f0;
 }
@@ -3714,9 +3723,9 @@ footer.container-fluid .copiright {
     .index .success_stories .content-r h4:nth-child(n+3) {
         margin: 0;
     }
-    .about .approach .approach_stage:last-child .headline:after {
-        content: none;
-    }
+    // .about .approach .approach_stage:last-child .headline:after {
+    //     content: none;
+    // }
     body.index header:not(.header_lighten):not(:hover) .header_wrap {
         background: transparent;
         -webkit-box-shadow: none;
