@@ -84,10 +84,10 @@ gulp.task('cssmin', () => {
 });
 
 /* 开发阶段，编译生成页面 */
-gulp.task('pages', shell.task(`pug -O ${path}/locale/zh.json source/pages/*.pug -o dist/ -P `));
+gulp.task('pages', shell.task(`pug -O ${path}/locale/zh.json source/pages -o dist/ -P `));
 
 /* 编译英文版本 */
-gulp.task('pages_en', shell.task(`pug -O ${path}/locale/en.json source/pages/*.pug -o dist/ -P `));
+gulp.task('pages_en', shell.task(`pug -O ${path}/locale/en.json source/pages -o dist/ -P `));
 
 /* 生产环境中，编译生成页面 */
 gulp.task('pagesmin', shell.task('pug source/pages/*.pug -o dist/'));

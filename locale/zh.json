@@ -176,15 +176,22 @@
             "needThree": "熟练掌握iOS原生/混合开发的独立开发者",
             "needFour": "配色大胆天马行空的设计师",
             "needFive": "爱折腾、闲不住、带薪实习的大学生"
+        }
+    },
+    "tech": {
+        "ai": {
+            "intro": "暂时没有想好ai的文案",
+            "description": "简要描述AI的特性",
+            "featureOne": "特点1",
+            "featureTwo": "特点2",
+            "featureThree": "特点3"
         },
-        "tech": {
-            "angular": {
-                "intro": "暂时没有想好angular的文案",
-                "description": "简要描述Angular的特性",
-                "featureOne": "特点1",
-                "featureTwo": "特点2",
-                "featureThree": "特点3"
-            }
+        "angular": {
+            "intro": "暂时没有想好angular的文案",
+            "description": "简要描述Angular的特性",
+            "featureOne": "特点1",
+            "featureTwo": "特点2",
+            "featureThree": "特点3"
         }
     }
 }
