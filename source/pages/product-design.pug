@@ -4,4 +4,65 @@ block product-design
       include components/header
       .overlay
       .wrap
+        .container-fluid.breadcrumbs
+            .container
+              .row
+                .col-xs-12
+                  a(href="/") #{page.service.root}
+                  a(href="javascript:void(0)")
+                    span
+                      svg(height="18px" viewBox="0 0 10 18" width="10px" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(x="0" xlink:href="#arrow_btn" y="0")
+                    | #{subNav.design}
+        .container
+          .row.content_wrap
+            .col-md-8
+              h1 #{subNav.design}
+              .block.general_info
+                .image_wrap
+                  img.icon_bg(alt="" src="/images/svg/icon_bg.svg")
+                  img(alt="" src="/images/svg/technology/product_design.svg")
+                p #{page.service.productDesignDescription}
+              .block
+                ol.list
+                  li
+                    p #{page.service.productDesignFeatureOne}
+                  li
+                    p #{page.service.productDesignFeatureTwo}
+                  li
+                    p #{page.service.productDesignFeatureThree}
+            .col-md-4
+              include components/fixedInfo
+        .container-fluid.block.technologies_links-wrap
+          .container
+            h2 #{page.service.techStack}
+          .block_gray
+            .container.technologies_links
+              a(href='/design/brand.html')
+                img(alt='' src='/images/svg/technology/product_design/branding.svg')
+                | #{thirdNav.design.brand}
+              a(href='/design/interact.html')
+                img(alt='' src='/images/svg/technology/product_design/interaction_design.svg')
+                | #{thirdNav.design.interact}
+              a(href='/design/ui.html')
+                img(alt='' src='/images/svg/technology/product_design/ui_design.svg')
+                | #{thirdNav.design.ui}
+              a(href='/design/sketch.html')
+                img(alt='' src='/images/svg/technology/product_design/sketch.svg')
+                | #{thirdNav.design.sketch}
+        .container.block
+          h2 #{page.service.otherServices}
+          .row.other_services
+            .col-sm-4.col-xs-12
+              .other_service
+                img(alt="" src="/images/svg/technology/web_development.svg")
+                h3 #{subNav.web}
+                p.small #{page.service.webDevIntro}
+                a.button.button-outline-blue.arrow_right(href="/web-development.html") #{page.index.more}
+            .col-sm-4.col-xs-12
+              .other_service
+                img(alt="" src="/images/svg/technology/mobile_development.svg")
+                h3 #{subNav.mobile}
+                p.small #{page.service.mobileDevIntro}
+                a.button.button-outline-blue.arrow_right(href="/mobile-development.html") #{page.index.more}
       include components/footer

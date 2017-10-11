@@ -4,7 +4,7 @@ block append info
     p.sub-h2 #{page.index.subTitle}
     form#media-kit-form
       input.input.input_rounded(placeholder=page.index.emailPlaceholder required='' type='email')
-      input.button.button-blue.button_big(onclick='_ga(&#39;send&#39;, &#39;Infopack&#39;, &#39;Get_infopack&#39;)' type='submit' value=page.index.sendButton)
+      input.button.button-blue.button_big(type='submit' value=page.index.sendButton)
       svg.media_kit-bg(height='225' id='media_kit-bg' viewbox='0 0 1305 225' width='1305' xmlns='http://www.w3.org/2000/svg')
         g(fill-rule='evenodd' fill='none')
           polygon(fill='#8559da' id='obj_1' points='664.726 204 677.583 211.726 669.858 224.583 657 216.858')

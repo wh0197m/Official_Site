@@ -128,7 +128,7 @@ a.small {
     font: 700 15px/1em BoldLx, Gilroy;
     text-align: center;
     letter-spacing: 1px;
-    color: white;
+    color: $p_light;
     text-transform: uppercase;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
@@ -223,7 +223,7 @@ a svg:hover {
 }
 
 .breadcrumbs a:last-child {
-    color: $primary;
+    color: $white;
     cursor: default;
 }
 

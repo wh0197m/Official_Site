@@ -1,0 +1,7 @@
+block append fixedInfo
+.get_our_media_kit-side
+  h2 #{page.index.infoTitle}
+  p.small #{page.index.infoSubTitle}
+  form(id="media-kit-form")
+    input.input(placeholder=page.index.emailPlaceholder required tabindex="1" type="email")
+    input.button.button-blue.button_big(tabindex="2" type="submit" value=page.index.sendButton)

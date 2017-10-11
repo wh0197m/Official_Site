@@ -4,4 +4,62 @@ block mobile-development
       include components/header
       .overlay
       .wrap
+       .container-fluid.breadcrumbs
+          .container
+            .row
+              .col-xs-12
+                a(href="/") #{page.service.root}
+                a(href="javascript:void(0)")
+                  span
+                    svg(height="18px" viewBox="0 0 10 18" width="10px" xmlns:xlink="http://www.w3.org/1999/xlink")
+                      use(x="0" xlink:href="#arrow_btn" y="0")
+                  | #{subNav.mobile}
+      .container
+        .row.content_wrap
+          .col-md-8
+            h1 #{subNav.mobile}
+            .block.general_info
+              .image_wrap
+                img.icon_bg(alt="" src="/images/svg/icon_bg.svg")
+                img(alt="" src="/images/svg/technology/mobile_development.svg")
+              p #{page.service.mobileDevDescription}
+            .block
+              ol.list
+                li
+                  p #{page.service.mobileDevFeatureOne}
+                li
+                  p #{page.service.mobileDevFeatureTwo}
+                li
+                  p #{page.service.mobileDevFeatureThree}
+          .col-md-4
+            include components/fixedInfo
+      .container-fluid.block.technologies_links-wrap
+        .container
+          h2 #{page.service.techStack}
+        .block_gray
+          .container.technologies_links
+            a(href='/mobile/android.html')
+              img(alt='' src='/images/svg/technology/mobile_development/kotlin.svg')
+              | #{thirdNav.mobile.android}
+            a(href='/mobile/ios.html')
+              img(alt='' src='/images/svg/technology/mobile_development/swift.svg')
+              | #{thirdNav.mobile.ios}
+            a(href='/mobile/desktop.html')
+              img(alt='' src='/images/svg/technology/mobile_development/electron.svg')
+              | #{thirdNav.mobile.electron}
+      .container.block
+        h2 #{page.service.otherServices}
+        .row.other_services
+          .col-sm-4.col-xs-12
+            .other_service
+              img(alt="" src="/images/svg/technology/web_development.svg")
+              h3 #{subNav.web}
+              p.small #{page.service.webDevIntro}
+              a.button.button-outline-blue.arrow_right(href="/web-development.html") #{page.index.more}
+          .col-sm-4.col-xs-12
+            .other_service
+              img(alt="" src="/images/svg/technology/product_design.svg")
+              h3 #{subNav.design}
+              p.small #{page.service.productDesignIntro}
+              a.button.button-outline-blue.arrow_right(href="/product-design.html") #{page.index.more}
       include components/footer

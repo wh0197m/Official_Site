@@ -1,0 +1,42 @@
+extends components/basic
+block ai
+    body.technologies
+      include components/header
+      .overlay
+      .wrap
+        .container-fluid.breadcrumbs
+            .container
+              .row
+                .col-xs-12
+                  a(href="/") #{page.service.root}
+                  a(href="/web-development.html")
+                    span
+                      svg(height="18px" viewBox="0 0 10 18" width="10px" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(x="0" xlink:href="#arrow_btn" y="0")
+                    | #{subNav.web}
+                  a(href="javascript:void(0)")
+                    span
+                      svg(height="18px" viewBox="0 0 10 18" width="10px" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(x="0" xlink:href="#arrow_btn" y="0")
+                    | #{thirdNav.web.angular}
+        .container
+          .row.content_wrap
+            .col-md-8
+              h1 #{thirdNav.web.angular}
+              .block.general_info
+                .image_wrap
+                  img.icon_bg(alt="" src="/images/svg/icon_bg.svg")
+                  img(alt="" src="/images/svg/technology/web_development/angular.svg")
+                p #{page.service.productDesignDescription}
+              .block
+                ol.list
+                  li
+                    p #{page.service.productDesignFeatureOne}
+                  li
+                    p #{page.service.productDesignFeatureTwo}
+                  li
+                    p #{page.service.productDesignFeatureThree}
+            .col-md-4
+              include components/fixedInfo
+          .block
+      include components/footer

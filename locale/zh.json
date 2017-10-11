@@ -64,18 +64,18 @@
             "featureTwoDetail": "暂时没想好文案",
             "featureThree": "可靠",
             "featureThreeDetail": "暂时没想好文案",
-            "featureFour": "先进",
+            "featureFour": "领先",
             "featureFourDetail": "暂时没想好文案",
 
             // 履历
             "caseTitle": "经验积累",
             "caseSubTitle": "产品是检验技术的唯一指标",
             "projectCount": "9",
-            "projectContent": "完美交付项目完美交付项目",
+            "projectContent": "次完美交付项目",
             "mobileAppCount": "4",
-            "mobileAppContent": "上线应用",
+            "mobileAppContent": "个上线应用",
             "memberCount": "7",
-            "memberContent": "全栈开发",
+            "memberContent": "位全栈开发工程师",
             "partnerCount": "11",
             "partnerContent": "家跨地域在线合作伙伴",
             "hireButton": "雇用我们",
@@ -98,6 +98,26 @@
             "infoSubTitle": "快速了解如何展开雇用合作",
             "emailPlaceholder": "输入您的邮箱",
             "sendButton": "我要资料"
+        },
+        "service": {
+            "root": "服务",
+            "techStack": "技术栈",
+            "otherServices": "其他服务",
+            "webDevIntro": "web开发文案暂时保留",
+            "webDevDescription": "web开发文案暂时保留",
+            "webDevFeatureOne": "特点一",
+            "webDevFeatureTwo": "特点二",
+            "webDevFeatureThree": "特点三",
+            "mobileDevIntro": "移动应用开发文案暂时保留",
+            "mobileDevDescription": "移动应用开发文案暂时保留",
+            "mobileDevFeatureOne": "特点一",
+            "mobileDevFeatureTwo": "特点二",
+            "mobileDevFeatureThree": "特点三",
+            "productDesignIntro": "产品设计暂时保留",
+            "productDesignDescription": "产品设计文案暂时保留",
+            "productDesignFeatureOne": "特点一",
+            "productDesignFeatureTwo": "特点二",
+            "productDesignFeatureThree": "特点三"
         },
         "about": {
             // 定价模型
@@ -156,6 +176,15 @@
             "needThree": "熟练掌握iOS原生/混合开发的独立开发者",
             "needFour": "配色大胆天马行空的设计师",
             "needFive": "爱折腾、闲不住、带薪实习的大学生"
+        },
+        "tech": {
+            "angular": {
+                "intro": "暂时没有想好angular的文案",
+                "description": "简要描述Angular的特性",
+                "featureOne": "特点1",
+                "featureTwo": "特点2",
+                "featureThree": "特点3"
+            }
         }
     }
 }
